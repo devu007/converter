@@ -19,6 +19,6 @@ export const ExchangeRates = async (req, res) => {
     console.error("Error fetching exchange rates:", error);
 
     // Send a 500 Internal Server Error response back to the client
-    res.status(500).send("Internal Server Error");
+    res.status(500).send("Internal Server Error", error);
   }
 };

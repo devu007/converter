@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Button, Card, Form, Input, Select } from "antd";
 import { RiCoinsLine } from "react-icons/ri";
 
-/**
+/*
  * Converter component for converting cryptocurrency values.
  */
 function Converter() {
   // API URL for fetching cryptocurrency exchange rates
-  const apiUrl = "http://localhost:3000/cryptocurrencies";
+  const apiUrl = "https://converter-cn5w.onrender.com/cryptocurrencies";
 
   // Default cryptocurrency options
   const defaultFirstValue = "Bitcoin";
