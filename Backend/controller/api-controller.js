@@ -4,9 +4,11 @@ export const ExchangeRates = async (req, res) => {
   try {
     // Make a GET request to the CoinGecko API to fetch exchange rates
     const response = await axios.get(
-      "https://api.coingecko.com/api/v3/exchange_rates"
+      "https://api.coingecko.com/api/v3/exchange_rates",
+      {
+        timeout: 1200000, // Set timeout to 10 seconds (adjust as needed)
+      }
     );
-
     console.log("Received response from CoinGecko API");
 
     // Extract data from the response
