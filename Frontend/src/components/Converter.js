@@ -7,7 +7,7 @@ import { RiCoinsLine } from "react-icons/ri";
  */
 function Converter() {
   // API URL for fetching cryptocurrency exchange rates
-  const apiUrl = "http://localhost:3000/cryptocurrencies";
+  const apiUrl = "https://converter-ecwl.onrender.com/cryptocurrencies";
 
   // Default cryptocurrency options
   const defaultFirstValue = "Bitcoin";

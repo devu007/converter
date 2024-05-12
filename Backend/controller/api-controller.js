@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const ExchangeRates = async (req, res) => {
   try {
-    const apiKey = process.env.API_KEY; // Replace "YOUR_API_KEY_HERE" with your actual CoinGecko API key
+    const apiKey = process.env.API_KEY;
 
     // Make a GET request to the CoinGecko API to fetch exchange rates
     const response = await axios.get(
